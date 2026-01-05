@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+
+p{
+    margin: 30%;
+    padding: 20px;
+    width: 30%;
+    background: #809900;
+}

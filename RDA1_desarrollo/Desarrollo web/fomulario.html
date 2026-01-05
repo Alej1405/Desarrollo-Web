@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de pacientes</title>
+</head>
+<body>
+    <h1>
+        Informacion del Paciente
+    </h1>
+    <form action="">
+        <label for="name" style="display: block;">
+            Nombre del paciente
+        </label>
+        <input
+            type="text" 
+            name="name" 
+            id="name" 
+            placeholder="Escriba su nombre">
+        <label for="document" style="display: block; margin-top: 10px">
+            Tipo de documento
+        </label>
+        <select name="document" id="document">
+            <option value="">-Seleccione-</option>
+            <option value="1">Cedula</option>
+            <option value="2">Pasaporte</option>
+        </select>
+        <label for="documentN" style="display: block; margin-top: 10px">
+            Numero de documento
+        </label>
+        <input
+            type="number" 
+            name="documentN" 
+            id="documentN" 
+            placeholder="Numeros sin espacios">
+        <label for="fNacimiento" style="display: block; margin-top: 10px">
+            Fecha de Nacimiento
+        </label>
+        <input
+            type="date" 
+            name="fNacimiento" 
+            id="fNacimiento" 
+            placeholder="Numeros sin espacios">
+        <label
+            for="sexo"
+            style="display: block; margin-top: 20px;"
+        >
+            Sexo
+        </label>
+        <input
+            type="radio"
+            name="sexo"
+            id="sexo"
+            value="M"
+        ><span>Masculino</span>
+        <input
+            type="radio"
+            id="sexo"
+            value="F"
+        ><span>Femenino</span>
+        <label for="email" style="display: block; margin-top: 10px">
+            Correo del Paciente
+        </label>
+        <input
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="ejemplo@empresa.com">
+        <label for="celular" style="display: block; margin-top: 10px">
+            N de Celular
+        </label>
+        <input
+            type="number" 
+            name="celular" 
+            id="celular" 
+            placeholder="Numeros sin espacios">
+        <label for="observacion" style="display: block; margin-top: 10px">
+            Observacion Medica del Paciente
+        </label>
+        <textarea name="observacion" id="observacion" rows="5" placeholder="Escriba aqui sus comentarios"></textarea>
+        <br>
+        <input type="submit" value="Enviar" style=" margin-top: 20px">
+        <input type="reset" value="Cancelar" style=" margin-top: 20px">
+
+    </form>
+</body>
+</html>

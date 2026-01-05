@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+    <!-- ingresar un texto -->
+        <label
+            for="name"
+            style="display: block;"
+        >
+            Nombre
+        </label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Escriba su nombre"
+        >
+    <!-- ingresar un correo en el formulario -->
+        <label
+            for="email"
+            style="display: block; margin-top: 20px;"
+        >
+            Email
+        </label>
+        <input
+            type="email"
+            id="email"
+            placeholder="nombre@empresa.com"
+        >
+    <!-- ingresar un correo en el formulario -->
+        <label
+            for="contasena"
+            style="display: block; margin-top: 20px;"
+        >
+            Contraseña
+        </label>
+        <input
+            type="password"
+            id="contasena"
+            placeholder="***********"
+        >
+    <!-- ingresar un correo en el formulario -->
+        <label
+            for="cedula"
+            style="display: block; margin-top: 20px;"
+        >
+            N de identificacion
+        </label>
+        <input
+            type="number"
+            id="cedula"
+            placeholder="numero sin espeacios"
+        >
+    <!-- ingresar un correo en el formulario -->
+        <label
+            for="telefono"
+            style="display: block; margin-top: 20px;"
+        >
+            N de telefono
+        </label>
+        <input
+            type="number"
+            id="telefono"
+            placeholder="numero sin espeacios"
+        >
+    <!-- ingresar un correo en el formulario -->
+        <label
+            for="fecha"
+            style="display: block; margin-top: 20px;"
+        >
+            Fecha de nacimiento
+        </label>
+        <input
+            type="date"
+            id="fecha"
+            placeholder="numero sin espeacios"
+        >
+    <!-- ingresar un correo en el formulario -->
+        <label
+            for="fecha"
+            style="display: block; margin-top: 20px;"
+        >
+            Sexo
+        </label>
+        <input
+            type="radio"
+            id="sexo"
+            value="M"
+        ><span>Masculino</span>
+        <input
+            type="radio"
+            id="sexo"
+            value="F"
+        ><span>Femenino</span>
+    <!-- uso de selecct -->
+        <label
+            for="estado civil"
+            style="display: block; margin-top: 20px;">
+            Estado Civil
+        </label>
+        <select name="estado civil" id="estado civil">
+            <option value="0">
+                Seleccione
+            </option>
+            <option value="1">
+                Casado
+            </option>
+            <option value="2">
+                Soltero
+            </option>
+            <option value="3">
+                Union Libre
+            </option>
+            <option value="4">
+                Separado
+            </option>
+            <option value="5">
+                Viudo
+            </option>
+        </select>
+    <!-- uso de selecct -->
+        <label
+            for="estado civil"
+            style="display: block; margin-top: 20px;">
+            Formacion
+        </label>
+        <select name="formacion" id="formacion" multiple>
+            <option value="1">
+                Complementario
+            </option>
+            <option value="2">
+                Tecnico
+            </option>
+            <option value="3">
+                Tecnologo
+            </option>
+            <option value="4">
+                Especializacion
+            </option>
+        </select>
+    <!-- checkbox  -->
+        <label
+            style="display: block; margin-top: 20px;">
+            Formacion
+        </label>
+        <input type="checkbox" value="tecnico">
+            <span>Tecnico</span>
+        <input type="checkbox" value="tecnologo">
+            <span>Tecnologo</span>
+        <input type="checkbox" value="especializacion">
+            <span>Especializacion</span>
+    <!-- cargar archivos -->
+        <label
+            style="display: block; margin-top: 20px;">
+            Archivo
+        </label>
+        <input type="file">
+    <!-- comentarios -->
+        <label
+            for="comentario"
+            style="display: block; margin-top: 20px;">
+            Comentario
+        </label>
+        <textarea name="comentario" id="comentario" rows="3" placeholder="Escriba aqui sus comentarios"></textarea>
+
+    <!-- agregar boton -->
+        <input type="submit" value="Enviar" style="display: block; margin-top: 20px">
+    <!-- agregar boton -->
+        <input type="reset" value="Cancelar" style="display: block; margin-top: 20px">
+    <!-- agregar boton -->
+        <input type="button" value="click" style="display: block; margin-top: 20px" onClick="alert('Hola, soy un boton')">
+    </form>
+</body>
+</html>

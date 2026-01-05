@@ -1,0 +1,71 @@
+
+/* Logo y título */
+header{
+    padding: var(--espaciado) 1rem;
+    background: linear-gradient(90deg, #000000, #525151);
+    border-bottom: 2px solid var(--color-primario);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+header h1 {
+    font-size: var(--tamano-h1);
+    font-weight: bold;
+    color: var(--color-primario);
+    letter-spacing: 2px;
+}
+
+/* Nav dinámico */
+nav {
+    padding: var(--espaciado);
+}
+
+
+/* Nav */
+nav ul.flex-row {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: var(--tamano-texto);
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 0.5rem;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-fondo-carga);
+    transition: width 0.4s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-texto-secundario);
+    transform: scale(1.1);
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}

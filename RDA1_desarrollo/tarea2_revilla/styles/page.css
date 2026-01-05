@@ -1,0 +1,403 @@
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-texto);
+    background-image: url('../resources/img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: var(--tamano-h2);
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: var(--tamano-texto);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+}
+
+/* Sec productos */
+        .productos {
+            position: relative; 
+            padding: 4rem 2rem;
+            text-align: center;
+            background-image: url('../resources/img/productos-bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            color: var(--color-text-secundario);
+            overflow: hidden; 
+        }
+
+        .descripcion {
+            font-size: 0.7em;           
+            color: #aaa;                 
+            font-style: italic;
+            line-height: 1.4;    
+            margin: 12px 0 16px 0;            
+            text-align: justify;      
+            letter-spacing: 0.5px;      
+            border-left: 3px solid #8B0000;
+            padding-left: 8px;           
+        }
+
+        .precio{
+            font-size: 0.5em;
+        }
+
+        .categoria-span {
+            display: inline-block;
+            background-color: #8B0000; 
+            color: #fff;
+            font-size: 0.5em;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 20px; 
+            margin: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+
+        /* Máscara con blur y oscurecimiento */
+        .productos::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(4, 4, 4, 0.256); 
+            backdrop-filter: blur(6px); 
+            -webkit-backdrop-filter: blur(6px); 
+            z-index: 0;
+        }
+
+        /* Contenido por encima de la máscara */
+        .productos > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .productos h2 {
+            font-size: 2rem;
+            color: var(--color-primario);
+            margin-bottom: 2rem;
+        }
+
+        #productos div {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 300px;
+            border-radius: 8px;
+            color: var(--color-texto-secundario);
+        }
+
+        /* Grid para el catálogo */
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+        }
+
+        /* Tarjetas*/
+        .grid-productos div {
+            width: 250px;
+            padding: 1.5rem;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            color: var(--color-secundario);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover dinámico */
+        .grid-productos div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Imagen del producto */
+        .grid-productos div img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        /* Botón */
+        .grid-productos div button {
+            background-color: var(--color-primario);
+            color: var(--color-fondo);
+            border: none;
+            width: 100%;
+            margin-top: auto;
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: var(--color-primario);
+            color: var(--color-fondo);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .grid-productos div button:hover {
+            background-color: var(--color-hover);
+            transform: scale(1.05);
+        }
+
+
+/* Sección Categorías */
+.categorias {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--color-fondo);
+}
+
+.categorias h2 {
+    font-size: var(--tamano-h2);
+    color: var(--color-primario);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de categorías */
+.categoria-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Tarjeta de categoría */
+.categoria {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Imagen */
+.categoria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Título */
+.categoria h3 {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Texto */
+.categoria p {
+    color: var(--color-texto);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Etiqueta estilo botón */
+.etiqueta-categoria {
+    display: inline-block;
+    background-color: var(--color-hover);
+    color: var(--color-fondo);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.etiqueta-categoria:hover {
+    background-color: var(--color-fondo-carga);
+    transform: scale(1.05);
+}
+
+
+.footer {
+    background-color: var(--color-secundario);
+    color: var(--color-texto-secundario);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 2px solid var(--color-hover);
+    position: relative;
+}
+
+.footer-content p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.footer-content strong {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+
+/* Sección Comentarios */
+
+.comentarios {
+    padding: 4rem 2rem;
+    background-image: url('../resources/img/contacto.png'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto parallax */
+    position: relative;
+    text-align: center;
+    color: var(--color-texto);
+    overflow: hidden;
+}
+
+/* Máscara oscura para mejorar legibilidad */
+.comentarios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+    backdrop-filter: blur(4px); /* Efecto glass */
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 0;
+}
+
+/* Contenido por encima de la máscara */
+.comentarios > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.comentarios h2 {
+    font-size: var(--tamano-h2);
+    color: var(--color-primario);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Formulario */
+.form-comentarios {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Grupos de campos */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-primario);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    background-color: #111;
+    color: var(--color-texto);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-hover);
+}
+
+/* Botón */
+.btn-enviar {
+    display: inline-block;
+    background-color: var(--color-hover);
+    color: var(--color-fondo);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-fondo-carga);
+    transform: scale(1.05);
+}

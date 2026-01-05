@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3{
+    color:antiquewhite;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+h2{
+    text-align: center;
+    letter-spacing: 9px;
+}
+
+h3{
+    font-size: x-large;
+}
+
+.contenedor{
+    margin:20px;
+}
+
+.texto{
+    text-align: center;
+    color:aquamarine;
+    padding: 20px;
+}
+
+.label{
+    margin: 0;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    background-color: rgb(71, 78, 84);
+    border-radius: 8px;
+    border-color: antiquewhite;
+    box-shadow: 10px, 10px, 10px, rgba(244, 243, 243, 0.705);
+    padding: 20px;
+}
+
+.formulario:hover{
+    background-color: rgb(156, 162, 167);
+}
+
+.btn{
+    background-color: rgb(73, 73, 73);
+    box-shadow: 2, 2, 5,rgb(71, 78, 84);
+}

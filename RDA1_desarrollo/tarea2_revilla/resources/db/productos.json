@@ -1,0 +1,171 @@
+
+[
+    {
+        "id": 1,
+        "nombre": "Whisky Reserva Premium",
+        "precio": 45.00,
+        "imagen": "1.png",
+        "descripcion": "Whisky de alta gama, añejado en barricas de roble para ofrecer notas profundas de vainilla y caramelo.",
+        "categoria": "Cerveza"
+    },
+    {
+        "id": 2,
+        "nombre": "Ron Añejo Selecto",
+        "precio": 30.00,
+        "imagen": "2.png",
+        "descripcion": "Ron oscuro con cuerpo robusto y aroma intenso, ideal para cócteles clásicos o degustar puro.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 3,
+        "nombre": "Vodka Premium Cristal",
+        "precio": 28.00,
+        "imagen": "3.png",
+        "descripcion": "Vodka ultra puro, destilado varias veces para lograr suavidad y sabor limpio en cada sorbo.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 4,
+        "nombre": "Tequila Reposado Tradición",
+        "precio": 35.00,
+        "imagen": "4.png",
+        "descripcion": "Tequila reposado con notas de agave y madera, perfecto para margaritas o degustar solo.",
+        "categoria": "Cerveza"
+    },
+    {
+        "id": 5,
+        "nombre": "Ginebra Botánica Deluxe",
+        "precio": 32.00,
+        "imagen": "5.png",
+        "descripcion": "Ginebra infusionada con hierbas y cítricos, ideal para preparar gin-tonics sofisticados.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 6,
+        "nombre": "Licor de Café Intenso",
+        "precio": 22.00,
+        "imagen": "6.png",
+        "descripcion": "Licor dulce con aroma a café tostado, perfecto para postres y cócteles especiales.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 7,
+        "nombre": "Brandy Gran Reserva",
+        "precio": 40.00,
+        "imagen": "7.png",
+        "descripcion": "Brandy elegante con notas de frutos secos y especias, ideal para ocasiones especiales.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 8,
+        "nombre": "Vino Tinto Gran Reserva",
+        "precio": 25.00,
+        "imagen": "8.png",
+        "descripcion": "Vino tinto robusto con cuerpo y notas de frutos rojos, perfecto para acompañar carnes.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 9,
+        "nombre": "Vino Blanco Seco Premium",
+        "precio": 20.00,
+        "imagen": "9.png",
+        "descripcion": "Vino blanco fresco con aroma cítrico y toque mineral, ideal para mariscos y ensaladas.",
+        "categoria": "Vino"
+    },
+    {
+        "id": 10,
+        "nombre": "Vino Rosado Suave",
+        "precio": 18.00,
+        "imagen": "10.png",
+        "descripcion": "Rosado ligero con notas florales y frutales, perfecto para tardes soleadas.",
+        "categoria": "Vino"
+    },
+    {
+        "id": 11,
+        "nombre": "Espumante Brut Elegance",
+        "precio": 28.00,
+        "imagen": "11.png",
+        "descripcion": "Espumante elegante con burbujas finas y sabor refrescante, ideal para celebraciones.",
+        "categoria": "Vino"
+    },
+    {
+        "id": 12,
+        "nombre": "Vino Tinto Malbec Reserva",
+        "precio": 26.00,
+        "imagen": "12.png",
+        "descripcion": "Malbec intenso con notas de ciruela y chocolate, excelente para acompañar quesos.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 13,
+        "nombre": "Vino Blanco Chardonnay",
+        "precio": 22.00,
+        "imagen": "13.png",
+        "descripcion": "Chardonnay con cuerpo medio y aroma a frutas tropicales, ideal para platos ligeros.",
+        "categoria": "Vino"
+    },
+    {
+        "id": 14,
+        "nombre": "Vino Dulce de Postre",
+        "precio": 24.00,
+        "imagen": "14.png",
+        "descripcion": "Vino dulce con notas de miel y frutas maduras, perfecto para acompañar postres.",
+        "categoria": "Vino"
+    },
+    {
+        "id": 15,
+        "nombre": "Cerveza Lager Dorada",
+        "precio": 3.50,
+        "imagen": "15.png",
+        "descripcion": "Cerveza lager refrescante con sabor suave y final limpio, ideal para cualquier ocasión.",
+        "categoria": "Cerveza"
+    },
+    {
+        "id": 16,
+        "nombre": "Cerveza IPA Artesanal",
+        "precio": 4.50,
+        "imagen": "16.png",
+        "descripcion": "IPA con aroma a lúpulo y sabor intenso, perfecta para amantes de cervezas fuertes.",
+        "categoria": "Licor"
+    },
+    {
+        "id": 17,
+        "nombre": "Cerveza Stout Cremosa",
+        "precio": 5.00,
+        "imagen": "17.png",
+        "descripcion": "Stout oscura con notas de café y chocolate, ideal para noches frías.",
+        "categoria": "Vino"
+    },
+    {
+        "id": 18,
+        "nombre": "Cerveza Pilsner Tradicional",
+        "precio": 3.00,
+        "imagen": "18.png",
+        "descripcion": "Pilsner ligera y equilibrada, con un toque amargo característico.",
+        "categoria": "Vino"
+    },
+    {
+        "id": 19,
+        "nombre": "Cerveza de Trigo Suave",
+        "precio": 4.00,
+        "imagen": "19.png",
+        "descripcion": "Cerveza de trigo con notas cítricas y textura sedosa, perfecta para verano.",
+        "categoria": "Cerveza"
+    },
+    {
+        "id": 20,
+        "nombre": "Cerveza Roja Caramelizada",
+        "precio": 4.20,
+        "imagen": "20.png",
+        "descripcion": "Cerveza roja con cuerpo medio y sabor a malta caramelizada, ideal para carnes.",
+        "categoria": "Cerveza"
+    },
+    {
+        "id": 21,
+        "nombre": "Cerveza Artesanal de Maracuyá",
+        "precio": 4.80,
+        "imagen": "21.png",
+        "descripcion": "Cerveza frutal con aroma tropical y sabor refrescante, única y exótica.",
+        "categoria": "Cerveza"
+    }
+]
