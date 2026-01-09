@@ -1,3 +1,37 @@
 body {
     background-color: black;
+    color:azure;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    /* width: fit-content; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img{
+    width: 15%;
+    height: 150px;
+}
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    row-gap: 25px;
+    column-gap: 100px;
+
+}
+
+p{
+    text-wrap: initial;
+    line-height: 50px;
+    line-break: strict;
+    margin: 20px;
 }
