@@ -1,0 +1,9 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.fecha{
+    font-size: 1.5rem;
+    color: #333;
+}
